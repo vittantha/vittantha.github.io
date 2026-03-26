@@ -567,6 +567,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
 
   /* About page — team grid: 1 col on mobile, horizontal card layout */
   .team-grid{grid-template-columns:1fr!important}
+  .founders-grid{grid-template-columns:1fr!important}
   .team-card{display:grid;grid-template-columns:auto 1fr;gap:20px;text-align:left;align-items:start}
   .team-card::after{display:none}
   .team-avatar{margin:0;width:64px;height:64px;font-size:22px}
@@ -1001,14 +1002,112 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
     <div class="wrap">
       <div class="section-heading-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:end;margin-bottom:clamp(36px,5vw,56px)">
         <div class="rv"><div class="label">Client Outcomes</div><h2 class="h2">Finance leaders who<br><span class="em">see clearly now</span></h2></div>
-        <p class="body-lg rv d1">We are currently working with our clients to document their outcomes. Check back soon.</p>
+        <p class="body-lg rv d1">Real outcomes from finance leaders who needed more than a consultant — they needed a team that understood both the accounting and the data.</p>
       </div>
-      <div class="testi-grid" style="display:flex;justify-content:center">
-        <div style="text-align:center;padding:clamp(48px,8vw,96px) 24px;max-width:520px">
-          <div style="font-size:48px;margin-bottom:20px;opacity:.3">💬</div>
-          <div class="h3" style="margin-bottom:14px">Client Stories Coming Soon</div>
-          <p class="body-lg">We're currently working with our clients to document their outcomes. Check back soon to read how Vittantha has helped finance teams close faster and report smarter.</p>
+      <div class="testi-grid">
+
+        <!-- Story 1: IFRS 15 / Revenue Recognition -->
+        <div class="testi rv">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#e8521a,#f59e0b);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:16px;flex-shrink:0">RK</div>
+            <div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)">CFO, Mid-Market SaaS Company</div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px">Accounting Advisory · IFRS 15</div>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;margin-bottom:14px">"Our auditors flagged our revenue recognition policy for three consecutive years. Vittantha resolved it in one engagement."</div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;flex:1">We had bundled software licences, implementation services, and annual support into single contracts but had never properly applied the five-step IFRS 15 model. Vittantha rebuilt our SSP methodology, redrafted our accounting policy, and prepared the disclosure notes our auditors had been requesting. Clean audit opinion, first time in four years.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:20px">
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">4 yrs</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Audit issue resolved</div></div>
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">6 wks</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Engagement duration</div></div>
+          </div>
         </div>
+
+        <!-- Story 2: Ind AS transition -->
+        <div class="testi rv d1">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#2563eb);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:16px;flex-shrink:0">PS</div>
+            <div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)">Group Financial Controller, Manufacturing Group</div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px">Accounting Advisory · Ind AS</div>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;margin-bottom:14px">"We were mandated to transition to Ind AS within eight months. Vittantha made sure we were ready in five."</div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;flex:1">As a listed company crossing the net worth threshold, Ind AS transition was non-negotiable. The biggest challenges were lease accounting under Ind AS 116, financial instruments reclassification, and restating our opening balance sheet. Vittantha handled the full conversion — impact assessment, restatement workings, and board-ready disclosures — well ahead of our deadline.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:20px">
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">3 mths</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Ahead of deadline</div></div>
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">100%</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Board approval first pass</div></div>
+          </div>
+        </div>
+
+        <!-- Story 3: IFRS 9 Hedge Accounting -->
+        <div class="testi rv d2">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#065f46,#10b981);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:16px;flex-shrink:0">AM</div>
+            <div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)">Head of Treasury, Commodities Exporter</div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px">Accounting Advisory · IFRS 9</div>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;margin-bottom:14px">"P&L volatility from our FX forwards was creating board-level anxiety. Vittantha's hedge accounting framework eliminated it."</div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;flex:1">We were marking our forward contracts to market through P&L with no offsetting entry — causing significant unexplained swings each quarter. Vittantha designed a cash flow hedge accounting programme under IFRS 9, prepared all designation documentation, built our effectiveness testing model, and trained our team on ongoing maintenance. The quarterly P&L is now clean and explainable.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:20px">
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">Zero</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">P&L surprises post-implementation</div></div>
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">8 wks</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Full framework delivered</div></div>
+          </div>
+        </div>
+
+        <!-- Story 4: Power BI Dashboard -->
+        <div class="testi rv">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#a78bfa);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:16px;flex-shrink:0">NJ</div>
+            <div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)">VP Finance, Retail Chain</div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px">Data Engineering · Power BI</div>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;margin-bottom:14px">"Our finance team spent two weeks every month building the board pack. Now it builds itself overnight."</div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;flex:1">With 60+ stores and three ERP systems, our monthly close was a nightmare of manual Excel consolidation. Vittantha built an automated ETL pipeline connecting all three systems into a unified Azure data warehouse, with Power BI dashboards delivering store-level P&L, inventory turns, and working capital metrics to leadership by 7am on close day. What took 14 days now takes zero effort.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:20px">
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">14 days</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Reporting effort eliminated</div></div>
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">3 ERPs</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Unified into one view</div></div>
+          </div>
+        </div>
+
+        <!-- Story 5: Data Engineering / AI -->
+        <div class="testi rv d1">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#b45309,#f59e0b);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:16px;flex-shrink:0">DV</div>
+            <div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)">Chief Data Officer, Insurance Group</div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px">Data Engineering · AI Solutions</div>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;margin-bottom:14px">"We had the data but couldn't use it. Vittantha built the infrastructure that finally made our analytics strategy real."</div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;flex:1">Our claims, policy, and finance data lived in silos with no reliable way to combine them for management reporting. Vittantha designed and deployed an Azure-based data lakehouse with automated ingestion, a finance-specific semantic layer, and an AI-assisted variance analysis tool that flags anomalies before the CFO's morning review. Our team now spends time on decisions, not data preparation.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:20px">
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">5 silos</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Consolidated into one platform</div></div>
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">AI</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Anomaly detection live</div></div>
+          </div>
+        </div>
+
+        <!-- Story 6: Expert Staffing -->
+        <div class="testi rv d2">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0f4c81,#0ea5e9);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;font-size:16px;flex-shrink:0">SK</div>
+            <div>
+              <div style="font-family:var(--sans);font-weight:700;font-size:14px;color:var(--navy)">Finance Director, PE-Backed Logistics Group</div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px">Expert Staffing · Loan Staff</div>
+            </div>
+          </div>
+          <div style="font-family:var(--serif);font-size:15px;font-weight:600;color:var(--navy);line-height:1.55;margin-bottom:14px">"We needed an IFRS-qualified controller for a 6-month post-acquisition integration. Vittantha placed the right person within ten days."</div>
+          <p style="font-size:13px;color:var(--muted);line-height:1.8;flex:1">Following a cross-border acquisition, we needed an experienced group reporting professional who understood IFRS consolidation, intercompany eliminations, and could work directly with our PE sponsor's reporting requirements. Permanent hiring wasn't feasible on the timeline. Vittantha placed a qualified CA with exactly the right profile within ten days — embedded in our team, no onboarding friction, and delivered the first post-acquisition consolidated pack on schedule.</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:20px">
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">10 days</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">From brief to placement</div></div>
+            <div style="text-align:center"><div style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--flame)">Day 1</div><div style="font-family:var(--mono);font-size:9px;color:var(--pale);letter-spacing:1px;text-transform:uppercase">Productive from arrival</div></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -1023,7 +1122,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         </div>
         <div style="position:relative;z-index:1;width:100%">
           <div class="cta-form"><input id="homeEmail" class="cta-input" type="email" placeholder="your@company.com"><button class="btn-fire" id="homeBtn">Book Now →</button></div>
-          <div class="cta-note">Or: <a href="mailto:vittantha@gmail.com" style="color:rgba(255,255,255,.4)">vittantha@gmail.com</a></div>
+          <div class="cta-note">Or: <a href="/cdn-cgi/l/email-protection#06706f72726768726e6746616b676f6a2865696b" style="color:rgba(255,255,255,.4)"><span class="__cf_email__" data-cfemail="d9afb0adadb8b7adb1b899beb4b8b0b5f7bab6b4">[email&#160;protected]</span></a></div>
         </div>
       </div>
     </div>
@@ -1538,7 +1637,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         </div>
         <div style="position:relative;z-index:1;width:100%">
           <div class="cta-form"><input id="procEmail" class="cta-input" type="email" placeholder="your@company.com"><button class="btn-fire" id="procBtn">Book Now →</button></div>
-          <div class="cta-note"><a href="mailto:vittantha@gmail.com" style="color:rgba(255,255,255,.4)">vittantha@gmail.com</a></div>
+          <div class="cta-note"><a href="/cdn-cgi/l/email-protection#c1b7a8b5b5a0afb5a9a081a6aca0a8adefa2aeac" style="color:rgba(255,255,255,.4)"><span class="__cf_email__" data-cfemail="3d4b5449495c5349555c7d5a505c5451135e5250">[email&#160;protected]</span></a></div>
         </div>
       </div>
     </div>
@@ -1623,7 +1722,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
             <p class="body-lg">We'll map your reporting pain, show you what's possible with your existing data, and give you an honest answer on whether Vittantha is the right fit — all in under 20 minutes. No sales pitch, no pressure.</p>
           </div>
           <div class="contact-info">
-            <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-title">Email Us Directly</div><div class="ci-body">vittantha@gmail.com<br>We respond within 1 business day.</div></div></div>
+            <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-title">Email Us Directly</div><div class="ci-body"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7d0b1409091c1309151c3d1a101c1411531e1210">[email&#160;protected]</a><br>We respond within 1 business day.</div></div></div>
             <div class="ci-card"><div class="ci-icon">📅</div><div><div class="ci-title">Book Instantly</div><div class="ci-body"><a href="https://calendly.com/vittantha" target="_blank" rel="noopener noreferrer" style="color:var(--orange);font-weight:600">Schedule via Calendly →</a><br><span style="font-size:12px;color:var(--pale)">Pick a time that works for you — no back-and-forth needed.</span></div></div></div>
             <div class="ci-card"><div class="ci-icon">⏱️</div><div><div class="ci-title">Typical Engagement Timeline</div><div class="ci-body">Discovery call → prototype in 2 weeks → structured go-live. Fixed scope. No surprises.</div></div></div>
             <div class="ci-card">
@@ -1691,47 +1790,99 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         <div class="rv"><div class="label">The Team</div><h2 class="h2">Senior practitioners,<br><span class="em">every engagement</span></h2></div>
         <p class="body-lg rv d1">Every Vittantha engagement is led by a qualified, experienced senior practitioner — not delegated to a junior team. You speak directly to the person doing the work.</p>
       </div>
-      <div class="team-grid">
+      <!-- Co-Founders Row -->
+      <div style="margin-bottom:16px">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:20px">Co-Founders</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px" class="founders-grid">
 
-        <div class="team-card rv">
-          <div class="team-avatar">V</div>
-          <div class="team-name">Founding Partner</div>
-          <div class="team-role">Financial Analytics & Advisory</div>
-          <p class="team-bio">Chartered Accountant with extensive experience leading financial analytics and MIS reporting transformations for mid-market organisations. Specialises in Power BI, data engineering, and CFO-level advisory.</p>
-          <div class="team-creds">
-            <span class="cred-tag">CA (ICAI)</span>
-            <span class="cred-tag">Power BI</span>
-            <span class="cred-tag">IFRS</span>
-            <span class="cred-tag">Ind AS</span>
+          <div class="team-card rv">
+            <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(232,82,26,.08);border:1px solid rgba(232,82,26,.2);border-radius:20px;padding:4px 12px;margin-bottom:16px">
+              <span style="font-size:10px;font-family:var(--mono);color:var(--orange);letter-spacing:1px;text-transform:uppercase">Co-Founder</span>
+            </div>
+            <div class="team-avatar" style="background:linear-gradient(135deg,#1e3a5f,#2563eb)">CA</div>
+            <div class="team-name">Co-Founder & Accounting Lead</div>
+            <div class="team-role">Technical Accounting · IFRS · Ind AS · US GAAP · BI & AI</div>
+            <p class="team-bio">Chartered Accountant with deep expertise in technical accounting advisory across IFRS, Ind AS, and US GAAP — and a strong command of the data and AI tools that make financial reporting faster and more reliable. Leads accounting and reporting engagements from GAAP transitions and consolidation to financial instruments and new standards implementation, while also driving the integration of Power BI dashboards and AI-assisted workflows into the accounting process. The combination of rigorous technical accounting and hands-on BI capability means clients get advice that is not only technically correct but immediately actionable through their reporting infrastructure.</p>
+            <div class="team-creds">
+              <span class="cred-tag">CA (ICAI)</span>
+              <span class="cred-tag">IFRS</span>
+              <span class="cred-tag">Ind AS</span>
+              <span class="cred-tag">US GAAP</span>
+              <span class="cred-tag">IFRS 9</span>
+              <span class="cred-tag">IFRS 15</span>
+              <span class="cred-tag">IFRS 16</span>
+              <span class="cred-tag">Power BI</span>
+              <span class="cred-tag">Agentic AI</span>
+            </div>
           </div>
-        </div>
 
-        <div class="team-card rv d1">
-          <div class="team-avatar" style="font-size:22px">📋</div>
-          <div class="team-name">Senior Accounting Advisor</div>
-          <div class="team-role">Technical Accounting & Advisory</div>
-          <p class="team-bio">Senior practitioner specialising in IFRS, US GAAP, and Ind AS technical accounting advisory. Deep expertise in revenue recognition, business combinations, financial instruments, and new standards implementation.</p>
-          <div class="team-creds">
-            <span class="cred-tag">CA (ICAI)</span>
-            <span class="cred-tag">IFRS</span>
-            <span class="cred-tag">US GAAP</span>
-            <span class="cred-tag">Ind AS</span>
+          <div class="team-card rv d1">
+            <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(232,82,26,.08);border:1px solid rgba(232,82,26,.2);border-radius:20px;padding:4px 12px;margin-bottom:16px">
+              <span style="font-size:10px;font-family:var(--mono);color:var(--orange);letter-spacing:1px;text-transform:uppercase">Co-Founder</span>
+            </div>
+            <div class="team-avatar" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">BI</div>
+            <div class="team-name">Co-Founder & Analytics Lead</div>
+            <div class="team-role">Power BI · Data Engineering · AI Solutions</div>
+            <p class="team-bio">Finance-trained data and analytics professional specialising in Power BI, Azure data infrastructure, and agentic AI solutions. Leads all data engineering and MIS reporting engagements — designing automated pipelines, executive dashboards, and AI-assisted analytics tools that give finance teams real-time clarity without manual effort.</p>
+            <div class="team-creds">
+              <span class="cred-tag">Power BI</span>
+              <span class="cred-tag">Azure</span>
+              <span class="cred-tag">Python</span>
+              <span class="cred-tag">ETL Pipelines</span>
+              <span class="cred-tag">Agentic AI</span>
+              <span class="cred-tag">DAX</span>
+            </div>
           </div>
-        </div>
 
-        <div class="team-card rv d2">
-          <div class="team-avatar" style="font-size:22px">🤖</div>
-          <div class="team-name">Data Engineering Lead</div>
-          <div class="team-role">Data Engineering & AI Solutions</div>
-          <p class="team-bio">Finance-trained data engineer specialising in ETL pipelines, Power BI report architecture, and agentic AI deployment on Azure. Bridges the gap between accounting requirements and technical implementation.</p>
-          <div class="team-creds">
-            <span class="cred-tag">Azure</span>
-            <span class="cred-tag">Power BI</span>
-            <span class="cred-tag">Python</span>
-            <span class="cred-tag">Agentic AI</span>
+        </div>
+      </div>
+
+      <!-- Team Members Row -->
+      <div style="margin-top:40px">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:20px">Team</div>
+        <div class="team-grid">
+
+          <div class="team-card rv">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#065f46,#10b981);font-size:18px">TA</div>
+            <div class="team-name">Technical Accounting Advisor</div>
+            <div class="team-role">Accounting Advisory · Standards Implementation</div>
+            <p class="team-bio">Qualified CA supporting complex accounting judgements across IFRS and Ind AS — including business combinations, lease accounting, financial instruments, and disclosure requirements. Works directly on client engagements under co-founder supervision.</p>
+            <div class="team-creds">
+              <span class="cred-tag">CA (ICAI)</span>
+              <span class="cred-tag">IFRS</span>
+              <span class="cred-tag">Ind AS</span>
+              <span class="cred-tag">Consolidation</span>
+            </div>
           </div>
-        </div>
 
+          <div class="team-card rv d1">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#b45309,#f59e0b);font-size:18px">DE</div>
+            <div class="team-name">Data Engineer</div>
+            <div class="team-role">Data Engineering · ETL · Azure Infrastructure</div>
+            <p class="team-bio">Specialist in designing and building finance-focused data pipelines on Azure. Handles ERP integrations, data modelling, and automated ingestion workflows — ensuring clean, reliable data flows into every dashboard and reporting layer Vittantha delivers.</p>
+            <div class="team-creds">
+              <span class="cred-tag">Azure</span>
+              <span class="cred-tag">Python</span>
+              <span class="cred-tag">SQL</span>
+              <span class="cred-tag">ETL</span>
+              <span class="cred-tag">Data Modelling</span>
+            </div>
+          </div>
+
+          <div class="team-card rv d2">
+            <div class="team-avatar" style="background:linear-gradient(135deg,#0f4c81,#0ea5e9);font-size:18px">DV</div>
+            <div class="team-name">Data Visualisation Expert</div>
+            <div class="team-role">Power BI · Dashboard Design · MIS Reporting</div>
+            <p class="team-bio">Expert in translating complex financial data into clear, decision-ready Power BI dashboards. Specialises in report architecture, DAX optimisation, and designing MIS outputs that finance leaders can use without technical support — on any device, in real time.</p>
+            <div class="team-creds">
+              <span class="cred-tag">Power BI</span>
+              <span class="cred-tag">DAX</span>
+              <span class="cred-tag">Report Design</span>
+              <span class="cred-tag">MIS Reporting</span>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -1825,7 +1976,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         <div class="privacy-badge">GDPR · CCPA · DPDPA COMPLIANT</div>
 
         <p>Vittantha Inc. ("<strong>Vittantha</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") is committed to protecting your personal data and respecting your privacy. This Privacy Policy explains how we collect, use, store, and protect information about you when you visit our website or engage with our services.</p>
-        <p>We encourage you to read this policy carefully. If you have any questions, please contact us at <a href="mailto:vittantha@gmail.com" style="color:var(--orange)">vittantha@gmail.com</a>.</p>
+        <p>We encourage you to read this policy carefully. If you have any questions, please contact us at <a href="/cdn-cgi/l/email-protection#52243b2626333c263a3312353f333b3e7c313d3f" style="color:var(--orange)"><span class="__cf_email__" data-cfemail="5e28372a2a3f302a363f1e39333f3732703d3133">[email&#160;protected]</span></a>.</p>
 
         <div class="privacy-toc">
           <div class="privacy-toc-title">CONTENTS</div>
@@ -1850,7 +2001,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         <div class="privacy-section" id="pp-1">
           <h3>1. Who We Are</h3>
           <p>Vittantha Inc. is a financial analytics and accounting advisory firm headquartered in India, providing services to organisations across multiple jurisdictions. For the purposes of applicable data protection laws, Vittantha Inc. is the data controller responsible for your personal data collected through this website.</p>
-          <p><strong>Contact:</strong> <a href="mailto:vittantha@gmail.com" style="color:var(--orange)">vittantha@gmail.com</a></p>
+          <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection#0f79667b7b6e617b676e4f68626e6663216c6062" style="color:var(--orange)"><span class="__cf_email__" data-cfemail="99eff0ededf8f7edf1f8d9fef4f8f0f5b7faf6f4">[email&#160;protected]</span></a></p>
         </div>
 
         <div class="privacy-section" id="pp-2">
@@ -1947,7 +2098,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
             <li><strong>Object</strong> — object to processing based on legitimate interests or direct marketing</li>
             <li><strong>Withdraw Consent</strong> — withdraw consent at any time without affecting prior lawful processing</li>
           </ul>
-          <p>To exercise your rights, email <a href="mailto:vittantha@gmail.com" style="color:var(--orange)">vittantha@gmail.com</a>. We respond within 30 days. EEA/UK residents may also lodge a complaint with their local supervisory authority. California residents hold additional rights under the CCPA — we do not sell personal information.</p>
+          <p>To exercise your rights, email <a href="/cdn-cgi/l/email-protection#3e48574a4a5f504a565f7e59535f5752105d5153" style="color:var(--orange)"><span class="__cf_email__" data-cfemail="681e011c1c09061c0009280f05090104460b0705">[email&#160;protected]</span></a>. We respond within 30 days. EEA/UK residents may also lodge a complaint with their local supervisory authority. California residents hold additional rights under the CCPA — we do not sell personal information.</p>
         </div>
 
         <div class="privacy-section" id="pp-10">
@@ -1976,7 +2127,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
             <div style="font-family:var(--mono);font-size:10px;color:var(--orange);letter-spacing:2px;margin-bottom:12px">DATA CONTROLLER</div>
             <div style="font-size:14px;color:var(--navy);font-weight:600;margin-bottom:4px">Vittantha Inc.</div>
             <div style="font-size:13px;color:var(--muted);margin-bottom:4px">India</div>
-            <div style="font-size:13px;"><a href="mailto:vittantha@gmail.com" style="color:var(--orange)">vittantha@gmail.com</a></div>
+            <div style="font-size:13px;"><a href="/cdn-cgi/l/email-protection#42342b3636232c362a2302252f232b2e6c212d2f" style="color:var(--orange)"><span class="__cf_email__" data-cfemail="afd9c6dbdbcec1dbc7ceefc8c2cec6c381ccc0c2">[email&#160;protected]</span></a></div>
           </div>
           <p style="margin-top:20px">We aim to respond to all privacy-related correspondence within <strong>30 calendar days</strong>.</p>
         </div>
@@ -2030,7 +2181,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
       </div>
       <div class="foot-col">
         <div class="foot-col-title">Contact</div>
-        <div class="foot-contact-item"><span class="foot-ci-icon">✉</span><span class="foot-ci-text"><a href="mailto:vittantha@gmail.com" style="color:rgba(255,255,255,.4);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">vittantha@gmail.com</a></span></div>
+        <div class="foot-contact-item"><span class="foot-ci-icon">✉</span><span class="foot-ci-text"><a href="/cdn-cgi/l/email-protection#8ff9e6fbfbeee1fbe7eecfe8e2eee6e3a1ece0e2" style="color:rgba(255,255,255,.4);transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'"><span class="__cf_email__" data-cfemail="e2948b9696838c968a83a2858f838b8ecc818d8f">[email&#160;protected]</span></a></span></div>
         <div class="foot-contact-item"><span class="foot-ci-icon">✓</span><span class="foot-ci-text">IFRS · US GAAP · Ind AS · Fixed Scope</span></div>
         <div class="foot-contact-item"><span class="foot-ci-icon">✓</span><span class="foot-ci-text">Power BI · Agentic AI</span></div>
         <div class="foot-contact-item"><span class="foot-ci-icon">⏱</span><span class="foot-ci-text">Rapid delivery · Loan staff on demand</span></div>
@@ -2047,7 +2198,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // SEO: page meta per section
 const pageMeta = {
   home: {
@@ -2260,48 +2411,42 @@ function applyConsent(prefs) {
 })();
 
 // Contact Form — Formspree handler
-// Replace YOUR_FORM_ID with your actual Formspree form ID at formspree.io
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = document.getElementById('contactSubmit');
-    const success = document.getElementById('formSuccess');
-    const data = new FormData(contactForm);
-    const payload = {
-      first_name: data.get('first_name'),
-      last_name: data.get('last_name'),
-      email: data.get('email'),
-      company: data.get('company'),
-      service: data.get('service'),
-      message: data.get('message')
-    };
-    btn.textContent = 'Sending…';
+    const successMsg = document.getElementById('formSuccess');
+    if (successMsg) successMsg.style.display = 'none';
     btn.disabled = true;
+    btn.textContent = 'Sending…';
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const data = new FormData(contactForm);
+      const res = await fetch('https://formspree.io/f/mnjonppz', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
+        body: data,
+        headers: { 'Accept': 'application/json' }
       });
       if (res.ok) {
-        contactForm.style.display = 'none';
-        success.classList.add('show');
+        btn.textContent = '✓ Message Sent!';
+        btn.style.background = 'linear-gradient(135deg,#15803d,#16a34a)';
+        contactForm.reset();
+        if (successMsg) { successMsg.style.display = 'block'; contactForm.style.display = 'none'; }
+        setTimeout(() => {
+          btn.textContent = 'Send Message →';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 4000);
       } else {
-        btn.textContent = 'Send Message →';
-        btn.disabled = false;
-        alert('Something went wrong. Please email us directly at vittantha@gmail.com');
+        throw new Error('Server error');
       }
-    } catch(err) {
+    } catch (err) {
       btn.textContent = 'Send Message →';
       btn.disabled = false;
-      alert('Could not send. Please email us directly at vittantha@gmail.com');
+      alert('Something went wrong. Please email us directly at vittantha@gmail.com');
     }
   });
 }
-
-// Init: show home page
-showPage('home');
 </script>
 </body>
 </html>
