@@ -826,7 +826,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
       <button class="nav-tab" data-page="insights">Insights</button>
       <button class="nav-tab" data-page="contact">Contact</button>
     </div>
-    <button class="nav-cta-btn" onclick="showPage('contact')" aria-label="Book a discovery call">Book a Call</button>
+    <button class="nav-cta-btn" onclick="bookCall()" aria-label="Book a discovery call">Book a Call</button>
     <button class="nav-ham" id="ham" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobNav"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -860,7 +860,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
           <div class="hero-h1 rv d1"><h1 class="display">We turn your<br><span class="em">financial data</span><br>into decisions.</h1></div>
           <p class="hero-desc rv d2">Automated MIS dashboards, accounting advisory, AI-powered intelligence, and expert staffing solutions for mid-market companies across the globe. Faster close. Smarter decisions.</p>
           <div class="hero-btns rv d3">
-            <button class="btn-fire" onclick="showPage('contact')">Book Free Discovery Call <span class="arr">→</span></button>
+            <button class="btn-fire" onclick="bookCall()">Book Free Discovery Call <span class="arr">→</span></button>
             <button class="btn-ghost" onclick="showPage('services')">Explore Services</button>
           </div>
           <div class="hero-stats rv d4">
@@ -979,7 +979,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
             <span class="tag">MIS Reporting</span><span class="tag">Consolidation</span>
             <span class="tag">Loan Staffing</span>
           </div>
-          <button class="btn-text" onclick="showPage('contact')" style="margin-top:28px">Start a conversation <span class="arr">→</span></button>
+          <button class="btn-text" onclick="bookCall()" style="margin-top:28px">Start a conversation <span class="arr">→</span></button>
         </div>
       </div>
     </div>
@@ -1214,7 +1214,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         </div>
         <div class="svc-cta-bar">
           <div><h3>Ready to replace manual reporting?</h3><p>Book a free 20-min call and see a live MIS demo built on your own data.</p></div>
-          <button class="btn-fire" onclick="showPage('contact')">Book a Discovery Call →</button>
+          <button class="btn-fire" onclick="bookCall()">Book a Discovery Call →</button>
         </div>
       </div>
     </div>
@@ -1368,7 +1368,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
 
         <div class="svc-cta-bar rv">
           <div><h3>Speak to a Senior Accounting Advisor — No Charge, No Commitment</h3><p>Book a 45-minute discovery call. We'll give you a frank assessment and a clear path forward.</p></div>
-          <button class="btn-fire" onclick="showPage('contact')">Schedule a Call →</button>
+          <button class="btn-fire" onclick="bookCall()">Schedule a Call →</button>
         </div>
       </div>
     </div>
@@ -1506,7 +1506,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
 
         <div class="svc-cta-bar rv">
           <div><h3>Ready for a fully automated data &amp; AI platform?</h3><p>From ETL pipelines to AI agents — we build the complete stack, end to end, on your infrastructure.</p></div>
-          <button class="btn-fire" onclick="showPage('contact')">Start the Conversation →</button>
+          <button class="btn-fire" onclick="bookCall()">Start the Conversation →</button>
         </div>
 
       </div>
@@ -1755,7 +1755,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         </div>
         <p class="body-lg" style="margin-bottom:28px">Pick a time that works for you — no back-and-forth needed. You'll speak directly to a senior practitioner.</p>
         <!-- Calendly inline widget -->
-        <div class="calendly-inline-widget"
+        <div id="calendly-widget" class="calendly-inline-widget"
              data-url="https://calendly.com/vittantha?hide_gdpr_banner=1&primary_color=e8521a"
              style="min-width:320px;height:700px;border-radius:16px;overflow:hidden;border:1px solid var(--line)">
         </div>
@@ -1785,7 +1785,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         <div class="rv">
           <div class="label">Our Story</div>
           <h2 class="h2" style="margin-bottom:20px">Built by finance professionals,<br><span class="em">for finance professionals</span></h2>
-          <button class="btn-fire" onclick="showPage('contact')" style="margin-top:8px">Book a Discovery Call <span class="arr">→</span></button>
+          <button class="btn-fire" onclick="bookCall()" style="margin-top:8px">Book a Discovery Call <span class="arr">→</span></button>
         </div>
         <div class="rv d1">
           <p class="body-lg" style="margin-bottom:16px">Vittantha was founded by a team of Chartered Accountants and finance professionals who spent their careers inside the world's most demanding reporting environments — from Big 4 accounting advisory to in-house CFO roles at mid-market and enterprise organisations across multiple jurisdictions.</p>
@@ -1963,7 +1963,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
           <div class="cta-band-body">Book a free 20-minute call. You'll speak directly to a senior practitioner — no intermediaries, no sales process.</div>
         </div>
         <div style="position:relative;z-index:1;width:100%">
-          <button class="btn-fire" onclick="showPage('contact')" style="width:100%;justify-content:center;padding:16px 24px;font-size:15px">Book a Discovery Call <span class="arr">→</span></button>
+          <button class="btn-fire" onclick="bookCall()" style="width:100%;justify-content:center;padding:16px 24px;font-size:15px">Book a Discovery Call <span class="arr">→</span></button>
         </div>
       </div>
     </div>
@@ -2189,7 +2189,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
           <li><a href="#" onclick="showPage('about');return false">About &amp; Team</a></li>
           <li><a href="#" onclick="showPage('process');return false">How It Works</a></li>
           <li><a href="#" onclick="showPage('insights');return false">Insights</a></li>
-          <li><a href="#" onclick="showPage('contact');return false">Book a Call</a></li>
+          <li><a href="#" onclick="bookCall();return false">Book a Call</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -2288,6 +2288,14 @@ function showPage(pageId, svcId) {
   document.body.style.overflow = '';
 }
 
+function bookCall() {
+  showPage('contact');
+  setTimeout(() => {
+    const widget = document.getElementById('calendly-widget');
+    if (widget) widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 350);
+}
+
 function activateSvcTab(id) {
   document.querySelectorAll('.svc-tab').forEach(t => t.classList.toggle('active', t.dataset.svc === id));
   document.querySelectorAll('.svc-panel').forEach(p => p.classList.remove('active'));
@@ -2327,10 +2335,10 @@ function setupCTA(btnId, emailId) {
   btn.addEventListener('click', () => {
     const v = input.value.trim();
     if (v && v.includes('@')) {
-      // Pre-fill contact form email if present and navigate
+      // Pre-fill contact form email if present and navigate to Calendly
       const cfEmail = document.getElementById('cf-email');
       if (cfEmail) cfEmail.value = v;
-      showPage('contact');
+      bookCall();
     } else {
       input.style.borderColor = 'rgba(239,68,68,.6)';
       input.focus();
