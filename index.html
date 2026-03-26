@@ -1122,7 +1122,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
         </div>
         <div style="position:relative;z-index:1;width:100%">
           <div class="cta-form"><input id="homeEmail" class="cta-input" type="email" placeholder="your@company.com"><button class="btn-fire" id="homeBtn">Book Now →</button></div>
-          <div class="cta-note">Or: <a href="/cdn-cgi/l/email-protection#06706f72726768726e6746616b676f6a2865696b" style="color:rgba(255,255,255,.4)"><span class="__cf_email__" data-cfemail="d9afb0adadb8b7adb1b899beb4b8b0b5f7bab6b4">[email&#160;protected]</span></a></div>
+          <div class="cta-note">Or: <a href="mailto:vittantha@gmail.com" style="color:rgba(255,255,255,.4)">vittantha@gmail.com</a></div>
         </div>
       </div>
     </div>
@@ -1722,8 +1722,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
             <p class="body-lg">We'll map your reporting pain, show you what's possible with your existing data, and give you an honest answer on whether Vittantha is the right fit — all in under 20 minutes. No sales pitch, no pressure.</p>
           </div>
           <div class="contact-info">
-            <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-title">Email Us Directly</div><div class="ci-body"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7d0b1409091c1309151c3d1a101c1411531e1210">[email&#160;protected]</a><br>We respond within 1 business day.</div></div></div>
-            <div class="ci-card"><div class="ci-icon">📅</div><div><div class="ci-title">Book Instantly</div><div class="ci-body"><a href="https://calendly.com/vittantha" target="_blank" rel="noopener noreferrer" style="color:var(--orange);font-weight:600">Schedule via Calendly →</a><br><span style="font-size:12px;color:var(--pale)">Pick a time that works for you — no back-and-forth needed.</span></div></div></div>
+            <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-title">Email Us Directly</div><div class="ci-body"><a href="mailto:vittantha@gmail.com" style="color:var(--orange);font-weight:600">vittantha@gmail.com</a><br>We respond within 1 business day.</div></div></div>
             <div class="ci-card"><div class="ci-icon">⏱️</div><div><div class="ci-title">Typical Engagement Timeline</div><div class="ci-body">Discovery call → prototype in 2 weeks → structured go-live. Fixed scope. No surprises.</div></div></div>
             <div class="ci-card">
               <div class="ci-icon">🔗</div>
@@ -1748,6 +1747,20 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
           </div>
         </div>
       </div>
+
+      <!-- Calendly Embed -->
+      <div class="rv d2" style="margin-top:clamp(40px,6vw,72px)">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px">
+          <div class="label" style="margin-bottom:0">📅 Book a Discovery Call</div>
+        </div>
+        <p class="body-lg" style="margin-bottom:28px">Pick a time that works for you — no back-and-forth needed. You'll speak directly to a senior practitioner.</p>
+        <!-- Calendly inline widget -->
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/vittantha?hide_gdpr_banner=1&primary_color=e8521a"
+             style="min-width:320px;height:700px;border-radius:16px;overflow:hidden;border:1px solid var(--line)">
+        </div>
+      </div>
+
     </div>
   </div>
 </div><!-- end page-contact -->
@@ -2191,7 +2204,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
       <span class="foot-copy">© 2026 Vittantha Inc. All rights reserved.</span>
       <span style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
         <a href="#" onclick="showPage('privacy');return false" style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.3);transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.7)'" onmouseout="this.style.color='rgba(255,255,255,.3)'">Privacy Policy</a>
-        <a href="#" onclick="showCookieBanner();return false" style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.3);transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.7)'" onmouseout="this.style.color='rgba(255,255,255,.3)'">Cookie Preferences</a>
+        <a id="footerCookiePrefs" href="#" onclick="showCookieBanner();return false" style="font-family:var(--mono);font-size:11px;color:rgba(255,255,255,.3);transition:color .2s" onmouseover="this.style.color='rgba(255,255,255,.7)'" onmouseout="this.style.color='rgba(255,255,255,.3)'">Cookie Preferences</a>
       </span>
       <span class="foot-tagline">We turn your financial data into decisions.</span>
     </div>
@@ -2314,11 +2327,10 @@ function setupCTA(btnId, emailId) {
   btn.addEventListener('click', () => {
     const v = input.value.trim();
     if (v && v.includes('@')) {
-      btn.textContent = "✓ We'll be in touch!";
-      btn.style.background = 'linear-gradient(135deg,#15803d,#16a34a)';
-      btn.style.boxShadow = '0 4px 20px rgba(21,128,61,.4)';
-      input.value = '';
-      setTimeout(() => { btn.textContent = 'Book Now →'; btn.style.background = ''; btn.style.boxShadow = ''; }, 3500);
+      // Pre-fill contact form email if present and navigate
+      const cfEmail = document.getElementById('cf-email');
+      if (cfEmail) cfEmail.value = v;
+      showPage('contact');
     } else {
       input.style.borderColor = 'rgba(239,68,68,.6)';
       input.focus();
@@ -2350,13 +2362,27 @@ function hideCookieBanner() {
 }
 function applyConsent(prefs) {
   localStorage.setItem('vittantha_cookie_prefs', JSON.stringify(prefs));
-  // Only set "accepted" flag when user explicitly accepts all
   if (prefs.accepted) localStorage.setItem('vittantha_cookie_consent', 'all');
+  // Hide footer cookie preferences link once user has interacted
+  const link = document.getElementById('footerCookiePrefs');
+  if (link) link.style.display = 'none';
   hideCookieBanner();
 }
 (function initCookies() {
-  // Show on every visit UNTIL "Accept All" has been clicked
   const consentGiven = localStorage.getItem('vittantha_cookie_consent') === 'all';
+  const prefsSaved   = localStorage.getItem('vittantha_cookie_prefs');
+
+  // Hide footer cookie preferences link if user has already accepted or saved prefs
+  function updateFooterLink() {
+    const link = document.getElementById('footerCookiePrefs');
+    if (!link) return;
+    const accepted = localStorage.getItem('vittantha_cookie_consent') === 'all';
+    const saved    = localStorage.getItem('vittantha_cookie_prefs');
+    link.style.display = (accepted || saved) ? 'none' : '';
+  }
+  updateFooterLink();
+
+  // Show banner only if "Accept All" has never been clicked
   if (!consentGiven) {
     setTimeout(showCookieBanner, 1000);
   }
@@ -2448,5 +2474,7 @@ if (contactForm) {
   });
 }
 </script>
+<!-- Calendly widget script -->
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
